@@ -16,8 +16,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            overflow: hidden;
+            min-height: 100vh; /* Allows content to grow beyond screen */
+            overflow-y: auto; /* Enables scrolling */
         }
 
         /* Glitter effect */
@@ -37,6 +37,7 @@
             border: 4px dashed #ff33aa;
             position: relative;
             animation: glitter 2s infinite alternate;
+            margin-bottom: 20px; /* Adds space at the bottom to allow scrolling */
         }
 
         h1 {
@@ -49,6 +50,7 @@
             color: #333;
             font-size: 1.2rem;
             line-height: 1.5;
+            padding: 0 10px;
         }
 
         .emoji {
@@ -68,6 +70,14 @@
         .sparkle-2 { top: -20px; right: -20px; }
         .sparkle-3 { bottom: -20px; left: -20px; }
         .sparkle-4 { bottom: -20px; right: -20px; }
+
+        /* Responsive Fix: Adjust font size for smaller screens */
+        @media screen and (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            p { font-size: 1rem; }
+            .emoji { font-size: 2.5rem; }
+            .message-box { padding: 20px; }
+        }
     </style>
 </head>
 <body>
