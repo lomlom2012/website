@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surprise! 🎁</title>
+    <title>🎉 Surprise, Celeste! 🎁</title>
     <style>
-        /* Background */
+        /* Background - Cute pastel gradient */
         body {
-            background-color: #ffe6f2; /* Light pastel pink */
-            font-family: 'Comic Sans MS', cursive, sans-serif; /* Playful font */
+            background: linear-gradient(135deg, #ffccff, #ff99cc, #ff66b2);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
             text-align: center;
             margin: 0;
             padding: 20px;
@@ -17,38 +17,73 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            overflow: hidden;
         }
-        
+
+        /* Glitter effect */
+        @keyframes glitter {
+            0% {opacity: 1;}
+            50% {opacity: 0.6;}
+            100% {opacity: 1;}
+        }
+
         /* Message Box */
         .message-box {
             background: white;
-            padding: 20px;
+            padding: 25px;
             border-radius: 15px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            border: 3px dashed #ff66b2; /* Cute dashed pink border */
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            border: 4px dashed #ff33aa;
+            position: relative;
+            animation: glitter 2s infinite alternate;
         }
 
         h1 {
-            color: #ff3399; /* Bright pink */
-            font-size: 2rem;
+            color: #ff0080;
+            font-size: 2.2rem;
+            animation: glitter 1s infinite alternate;
         }
 
         p {
             color: #333;
             font-size: 1.2rem;
+            line-height: 1.5;
         }
 
         .emoji {
             font-size: 3rem;
+            animation: glitter 1.5s infinite alternate;
         }
+
+        /* Cute sparkles */
+        .sparkle {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.8;
+            animation: glitter 1.5s infinite alternate;
+        }
+
+        .sparkle-1 { top: -20px; left: -20px; }
+        .sparkle-2 { top: -20px; right: -20px; }
+        .sparkle-3 { bottom: -20px; left: -20px; }
+        .sparkle-4 { bottom: -20px; right: -20px; }
     </style>
 </head>
 <body>
     <div class="message-box">
-        <div class="emoji">🎀🎉</div>
-        <h1>This domain has been gifted! 🎁</h1>
-        <p>Something exciting is coming soon! Stay tuned. 💖</p>
+        <div class="emoji">🎀🎉💖</div>
+        <h1>Dear Celeste, ✨</h1>
+        <p>For your **21st birthday** 🎂🎈 and your ascent into adulthood, I am giving you this **very adult gift**. 🎁</p>
+        <p><strong>🌟 celesteagbaje.com 🌟</strong> is now **yours** to do with as you please! 💖</p>
+        <p>Of course, I hope you will use this space for your **professional portfolio** to **stand out** 🌟 amongst your competitors with a **proper website showcasing your work**. 💼✨</p>
+        <p>But if you want to use it to **display daily mindfulness quotes**, that’s fine too. 🧘‍♀️💭</p>
+        <p>I am – as is **painfully visible here** 😂 – not a **graphic designer**, but I’ll be there to set everything up for you on the **backend**. 💻💖</p>
+        <p>**All the love,** <br> 💕 **Georgie** 💕</p>
+        <div class="sparkle sparkle-1">✨</div>
+        <div class="sparkle sparkle-2">✨</div>
+        <div class="sparkle sparkle-3">✨</div>
+        <div class="sparkle sparkle-4">✨</div>
     </div>
 </body>
 </html>
